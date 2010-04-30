@@ -1,0 +1,55 @@
+/********************Page Structure****************/
+#container{ width:960px; margin:0 auto; height:auto;}
+#header{ width:960px; height:65px; position:relative;}
+#content{ width:960px; height:auto; margin-top:35px; margin-bottom:30px;}
+#banner{ margin-bottom:35px; width:auto;}
+#left-column{ width:300px; float:left; margin-right:20px;}
+#center-column{ width:300px; float:left; margin-right:20px;}
+#right-column{ width:320px; float:left;}
+#footer{ width:100%; background:#403b33 url(../images/footer_border.gif) repeat-x top left; height:125px; position:relative; clear:both;}
+
+/*****************Header********************/
+#logo{ position:absolute; top:10px; left:-5px; background:url(../images/aliado_logo.png) no-repeat; width:170px; height:55px;} /*was left:36px*/
+#menu{ position:absolute; top:7px; right:0; height:58px;}
+#menu ul{ list-style:none; margin:0; padding:0;}
+#menu ul li{ float:left; display:block; height:58px; border-right:1px solid #edebe6; background:none; padding:0;}
+#menu ul li a{ display:block; padding:0 5px; font-size:14px; color:#605f5f; width:100px; line-height:58px; letter-spacing: -1px; text-align:center;}
+#menu ul li a:hover { color:#94c7b6; text-decoration:none;}
+#menu ul li#rss a{ text-indent:-9999px; background:url(../images/feed-icon-28x28.png) no-repeat center center;}
+
+/*****************Banner********************/
+#banner-image{ width:608px; overflow:hidden; float:left; padding-right:15px; border-right:1px solid #edebe6;}
+#banner-image img{ width:408px; float:left; margin-right:10px;} /* was 608px*/
+#banner-image p{font-weight:bold; font-size:13px; margin-top:30px; margin-right:10px; font-style:italic;font-family:Verdana, "Times New Roman", Times, serif;}
+#testimonies{width:280px; float:left; _float:none; padding:10px 8px 0 20px; }
+blockquote.testimony{ background:url(../images/leftquote.gif) no-repeat scroll left top; height:auto; margin:0; text-indent:25px; padding:0;}
+blockquote.testimony div{ background:url(../images/rightquote.gif) no-repeat scroll right bottom; height:auto; margin:0; padding:30px 20px 10px; text-indent:35px;}
+blockquote.testimony span.subscriber-name { display:block; font-style:normal; /*font-weight:bold;*/ padding-left:20px; text-indent:0; text-align:right; margin-top:15px; font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size:12px; }
+
+/*Rounded Corner Box*/
+.roundedbox{ margin:0 0 10px 12px;  position:relative; z-index:1;}
+.roundedbox-content{ padding:10px 12px 2px 0; position:relative;  zoom:1; _overflow-y:hidden !important;}
+/*Set the background image according to the box color*/
+.white-box .roundedbox-content, .white-box .roundedbox-top, .white-box .roundedbox-bottom, .white-box .roundedbox-bottom div { background:url(../images/box-shadow.png) no-repeat right top;  _background-image:url(../images/box-shadow.png);}
+.roundedbox-top { background-position:left top !important; height:100%; _height:800px; left:0; margin-left:-12px; position:absolute; top:0; width:12px;}
+.panes .roundedbox-top { background-position:0px -10px  !important;}
+.roundedbox-bottom { background-position:right bottom !important;}
+.roundedbox-bottom { position:relative; width:100%;}
+.roundedbox-bottom, .roundedbox-bottom div { font-size:1px; height:5px;}
+.roundedbox-bottom div {background-position:left bottom !important; margin-left:-12px; position:relative; width:12px;}
+
+/*****************Three Columns********************/
+ul.entries-list{ list-style:none; padding:0; margin:0;}
+ul.entries-list li{ border-bottom:1px solid #d4d4d4; background:none; padding:0;}
+ul.entries-list li a{ display:block; text-decoration:none; padding:3px 0; color:#605f5f;}
+ul.entries-list li a:hover{ background-color:#f7f7f7; color:#79ac9b; text-decoration:none;}
+
+/*****************Footer********************/
+
+#footer-links{ width:960px; margin:0 auto; padding-top:40px;}
+p.copyright{ color:#96c8b7; float:left;}
+#footer-links ul{ list-style:none; margin:0; padding:0; float:right;}
+#footer-links ul li{ padding:0 7px; background:none; float:left; border-right:1px solid #96c8b7;}
+#footer-links ul li a{ display:block; float:left; line-height:1; color:#96c8b7;}
+#footer-links ul li.subscribe-blog{ border:none; padding-left:40px; }
+#footer-links ul li.subscribe-blog a{ padding-left:20px; background:url(../images/feed-icon-14x14.png) no-repeat left center; line-height:1.1;} 
