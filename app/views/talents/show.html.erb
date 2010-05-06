@@ -1,0 +1,20 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @talent.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @talent.title %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @talent.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_talent_path(@talent) %> |
+<%= link_to 'Back', talents_path %>
