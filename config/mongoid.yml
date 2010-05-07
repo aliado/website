@@ -10,13 +10,13 @@ test:
   database: aliado_test
 
 # set these environment variables on your prod server
-production:
-  url: <%= ENV['MONGOHQ_URL'] %>
-
 #production:
-#  <<: *defaults
-#  host: <%= ENV['MONGOID_HOST'] %>
-#  port: <%= ENV['MONGOID_PORT'] %>
-#  username: <%= ENV['MONGOID_USERNAME'] %>
-#  password: <%= ENV['MONGOID_PASSWORD'] %>
-#  database: <%= ENV['MONGOID_DATABASE'] %>
+#  uri: <%= ENV['MONGOHQ_URL'] %>
+
+production:
+  <<: *defaults
+  host: <%= ENV['MONGOID_HOST'] %>
+  port: <%= ENV['MONGOID_PORT'] %>
+  username: <%= ENV['MONGOID_USERNAME'] %>
+  password: <%= ENV['MONGOID_PASSWORD'] %>
+  database: <%= ENV['MONGOID_DATABASE'] %>
