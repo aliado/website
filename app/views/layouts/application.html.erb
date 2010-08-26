@@ -2,13 +2,15 @@
 <html>
 <head>
   <title>Aliado</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'resets', 'defaults', 'type', 'forms', 'tables', 'lists', 'screen' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+  <div class="content">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
