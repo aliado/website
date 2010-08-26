@@ -1,6 +1,4 @@
-Aliado::Application.routes.draw do |map|
-  resources :talents
-
+Aliado::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -18,12 +16,12 @@ Aliado::Application.routes.draw do |map|
   # Sample resource route with options:
   #   resources :products do
   #     member do
-  #       get :short
-  #       post :toggle
+  #       get 'short'
+  #       post 'toggle'
   #     end
   #
   #     collection do
-  #       get :sold
+  #       get 'sold'
   #     end
   #   end
 
@@ -37,7 +35,7 @@ Aliado::Application.routes.draw do |map|
   #   resources :products do
   #     resources :comments
   #     resources :sales do
-  #       get :recent, :on => :collection
+  #       get 'recent', :on => :collection
   #     end
   #   end
 
@@ -50,7 +48,7 @@ Aliado::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "frontpage#index"
+  # root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 
